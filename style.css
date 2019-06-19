@@ -1,0 +1,311 @@
+body{
+    background-color:azure;
+  }
+  #main {
+   
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(7,25%);
+    grid-row-gap: 10px;
+  }
+  
+  header{
+    
+    background-color: #55adee;
+    /* height: 100vh; */
+    grid-column: 1/ span 4;
+    grid-row: 1 / span 3;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+  
+    grid-template-rows: repeat(15,6%);
+    margin-bottom:170px;
+  }
+  
+  img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  #top-header{
+    grid-column: 1/  4;
+    grid-row: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(3,44%);
+    grid-template-rows: repeat(1,25%);
+    color: white;
+  }
+  
+  .top-left-header{
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    grid-template-rows: repeat(1,25%);
+    font-size: 10px;
+    align-content: center;
+    grid-gap: -2px;
+  }
+  
+  
+  .top-middle-header{
+    justify-self: center;
+    
+  }
+  
+  .top-middle-header p {
+    margin-top:10px;
+    justify-self: center;
+  }
+  
+  .top-right-header{
+    justify-self: end;
+   
+  }
+  
+  
+  
+  .top-right-header img{
+    height: 30px;
+    width: 30px;
+  }
+  
+  #main-header{
+    grid-column: 1/  4;
+    grid-row: 2 / span 2;
+    display: grid;
+    grid-template-columns: repeat(3,44%);
+    grid-template-rows: repeat(1,35%);
+    color: white;
+    
+  }
+  
+  .main-left-header{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(1,25%);
+    font-size: 10px;
+    justify-content: center;
+  
+  }
+  .main-left-header img {
+    justify-self: end;
+    
+  }
+  
+  #main-header p {
+    justify-self: center;
+    align-content: center;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  
+  #profile-image{
+    background-color:purple;
+    grid-column: 1/ span 4;
+    grid-row: 3 / 12;
+    justify-content: center;
+  
+    display: grid;
+    grid-template-columns: repeat(3, 44%);
+    grid-template-rows: 60% ;
+   
+  
+  }
+  img#profile-pic {
+  
+    width: 100px;
+    height: 100px;
+    grid-column:2/ 2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
+    border: 5px solid black;
+  }
+  
+  #foll-info{
+   
+    background-color: white;
+    grid-column: 1/ span 4;
+    grid-row:11 /  12;
+  
+    display: grid;
+    grid-template-columns: repeat(3, 33.5%);
+    grid-template-rows: repeat(1, 100%);
+    justify-content: center;
+    align-content: center;
+  
+  }
+  
+  #tweet{
+    
+    grid-column: 1/ 2;
+    grid-row: 1/ 1;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 44%);
+    grid-template-rows: repeat(2, 35%); 
+    border-right: 1px solid gray; 
+    border-bottom: 1px solid gray;
+    justify-content: center;
+   
+    align-items: center;
+  }
+  
+  
+  #following{
+    
+    grid-column: 2/ 3;
+    grid-row: 1/ 2;
+    display: grid;
+    grid-template-columns: repeat(1, 44%);
+    grid-template-rows: repeat(2, 35%); 
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #followers{
+    grid-column: 3/ 3;
+    grid-row: 1/ 2;
+    display: grid;
+    grid-template-columns: repeat(1, 43%);
+    grid-template-rows: repeat(2, 35%);
+    border-bottom: 1px solid gray;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #foll-info p {
+    color: grey;
+  }
+  
+  #bottom-header{
+   height:50px;
+    background-color: white;
+    grid-column: 1/ span 4;
+    grid-row: 12/ span 12;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 43%);
+    grid-template-rows: 1;
+    border-bottom: 5px solid black;
+  }
+  
+  #setting{
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 1/1;
+    padding-left: 10px;
+    justify-self: start;
+    align-self: start;
+  
+  }
+  
+  #add-follow{
+    padding-top: 15px;
+    background-color:white;
+    color: #55adee;
+    grid-column: 2 / span 2;
+    grid-row: 1/1;
+    justify-self: end;
+    align-self: start;
+    border: 1px solid #55adee;
+  
+    text-align: center;
+  border-radius: 5px;
+  padding-right: 10px;
+  width: 100px;
+  height: 40px;
+  
+  }
+  
+  #setting button {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 60px;
+  height: 40px;
+  
+  
+  }
+  
+  footer{
+    margin-top:-120px;
+  background-color:white;
+    /* height: 100vh; */
+    grid-column: 1/ span 4;
+    grid-row: 4 / span 6;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 10%);
+    align-content: start;
+    
+  
+  }
+  #tweet-post {
+    justify-items: center;
+    background-color: white;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 34%);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .tweet{
+    grid-column: 2/span 3;
+    grid-row: 1/ 2;
+  }
+  
+  #top-main{
+    grid-column: 1/span 1;
+    grid-row: 1/ 2;
+    align-self: end;
+  }
+  
+  #unicorn-tweet{
+  
+    width: 70px;
+    height: 70px;
+    border: 1px solid grey;
+  }
+  
+  
+  .footer-bottom{
+  
+    background-color:black;
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 7;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 50%);
+    align-content: center;
+    justify-items: center;
+    align-items:center;
+  
+  }
+  
+  #home{
+    align-self:center;
+  }
+  
+  
+  #connect{
+    
+    align-self:center;
+  }
+  
+  #discover{
+    align-self:center;
+  }
+  
+  
+  #me{
+    align-self:center;
+  }
+  .footer-bottom p {
+    margin-top: 0px;
+    color: grey;
+  }
+  
